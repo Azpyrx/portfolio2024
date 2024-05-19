@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#header-img {
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+    height: 100px;
+    width: 100px;
+    align-self: center; /* Centrar verticalmente en el encabezado */
+    margin-left: 20px; /* Agregar un margen a la izquierda */
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: azure;
+    position: fixed; /* Establecer posicionamiento fijo */
+    top: 0; /* Anclar en la parte superior */
+    width: 100%; /* Ocupar todo el ancho */
+    z-index: 1000;
+}
+#nav-bar {
+    display: flex;
+    margin-right: 20px; /* Agregar un margen a la derecha */
+}
+.nav-link {
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+#video{
+    margin-top: 20px;
+    margin-left: 5%;
+    display: flex;
+    width: 90%;
+    height:600px;
+    place-self: center;
+}
+#Products{
+    border: 1px solid black;
+    display: grid;
+    justify-content: space-evenly;
+    padding: 20px 40px 20px 10px;
+}
+#imgProducts {
+    margin-right: 10px;
+    height: 250px;
+    width: 250px;
+    float: left;
+    border-radius: 20%;
+    padding-bottom: 15px;
+}
+#textProducts {
+    border: 1px solid black;
+    display:contents;
+    font-style: oblique;
+    text-align:justify;
+    margin-left: 250px;
+    width: 85%;
+    font-size: 20px;
+}
+div > span {
+    color:brown;
+    font-size: 24px;
+    text-decoration-line:underline;
+    text-decoration-color: black;
+}
+#Services {
+    text-align: center;
+    padding: 10px;
+}
+.imgServices-container {
+    justify-content: space-evenly;
+}
+#imgServices {
+    margin:60px;
+    width: 400px;
+    height: 300px;
+}
+#imgBanner-container {
+    align-content: center;
+    position: relative;
+}
+#banner {
+    object-fit:cover;
+    width: 100%;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+}
+#Prices {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 20% 20px 20%;
+}
+#Prices-item {
+    width: 30%;
+}
+#Prices-item > p {
+    text-align: justify;
+}
+#Prices > #Prices-sub {
+    border: 2px snow solid;
+}
+#Prices-title {
+    margin-bottom: 15px;
+    background-color:darkgrey;
+    text-align: center;
+}
+#totalPrice {
+    font-size: 28px;
+    justify-content: space-between;
+    text-align: center;
+}
+
+body {
+    background-color:bisque;
+    margin: 150px 0 0 0 ;
+}
+
+.nav-link:active {
+    font-size: 12px;
+}
+.nav-link:hover {
+    color: red;
+}
+@media only screen and (max-width: 730px){
+
+    #video, #textProducts, #imgServices, #Prices-item > p {
+        display:none;
+    }
+    span {
+        font-size: 24px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 300px;
+        height: 200px;
+        display:flexbox;
+    }
+    #Products {
+        padding: 0;
+    }
+}

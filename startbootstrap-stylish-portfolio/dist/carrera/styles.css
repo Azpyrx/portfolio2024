@@ -1,0 +1,136 @@
+#navbar {
+    background-color: aquamarine;
+    height:1200px;
+    width: 100px;
+    position:fixed;
+    top:0px;
+    left: 0px;
+}
+#list-nav {
+    list-style: none;
+    margin-left: -30px;
+}
+#list-nav li:not(:first-child) {
+    margin-top: 80px;
+}
+#list-nav li:hover {
+    margin-left: -10px;
+    background-color: blue;
+    cursor: pointer;
+    animation: animationPiola alternate 1s infinite;
+    }
+
+@keyframes animationPiola {
+    0% {
+        color: red;
+    }
+    50% {
+        color: white;
+    }
+    100% {
+        color: blue;
+    }
+}
+
+main{
+    margin-left: 110px;
+    font-style: italic;
+    font-family: 'Neuton', serif;
+}
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+.cell {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+img {
+    height: auto;
+    object-fit: cover;
+    max-width: 400px;
+    margin: 0 10px 10px 10px;
+    height: 300px;
+    width: 400px;
+    border-radius: 30%;
+}
+.city-name {
+    font-size: 24px;
+    text-align: center;
+}
+.row > .cell:hover  {
+    animation: imgAnim 1s infinite alternate;
+    opacity: 70%;
+}
+@keyframes imgAnim {
+    0% {
+        border-radius:30%;
+        background-color: red;
+    }
+    50% {
+        border-radius:20%;
+        background-color: blue;
+    }
+    100% {
+        border-radius:30%;
+        background-color: red;
+    }
+}
+
+code {
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.4; /* Reduce el espacio entre líneas */
+    background-color: #f7f7f7;
+    padding: 10px; /* Reduzca el espacio interno del contenedor */
+    margin: 15px; /* Reduzca el espacio externo del contenedor */
+    border-radius: 3px; /* Haga las esquinas menos redondeadas para un aspecto más compacto */
+    font-size: 14px; /* Reduzca el tamaño de fuente */
+}
+#headerTitle {
+    display: block;
+    text-align: center;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    margin: 25px;
+    background-color:azure;
+}
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 14px; /* Tamaño de texto más pequeño para pantallas pequeñas */
+        background-color: #ccc; /* Cambiar el fondo para pantallas pequeñas */
+        overflow-x: hidden;
+    }
+    #navbar {
+        font-size: 12px;
+        padding: -10px;
+        margin-right: -20px;
+    }
+    .gallery {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: left;
+    }
+    .cell {
+        display: block;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    img {
+        object-fit: cover;
+        max-width: 400px;
+        margin: 0 10px 10px 10px;
+        height: 100px;
+        width: 100px;
+    }
+}

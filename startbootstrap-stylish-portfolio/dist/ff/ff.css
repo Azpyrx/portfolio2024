@@ -1,0 +1,116 @@
+html  {
+    font-size:30px;
+    place-content: center;
+    resize: both;
+    overflow:auto;
+    overflow-x: hidden; /* Oculta la barra de desplazamiento horizontal */
+    max-width: 100%; /* Evita que la página se desborde horizontalmente */
+    background-repeat: round;
+    background-image: url(https://emoji.discadia.com/emojis/109c1be6-16df-4255-ab59-9b8ea3b67d35.gif);
+}
+#title-div {
+    background-color: white;
+    margin: -10px -20px -40px -20px;
+}
+header {
+    margin: 10px;
+    display: grid;
+}
+#image {
+    padding: 100px 0 0 0;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    min-width: 100px;
+    max-width: 1200px;
+    display: block;
+    height: auto;
+    margin: auto;
+}
+#info {
+    background-image: url(https://images.hdqwalls.com/download/final-fantasy-vii-5k-9h-1440x2560.jpg);
+    background-position: 60%;
+    background-size: cover;
+    padding-bottom: 800px;
+    scale: 90%;
+}
+#title {
+    font-style: italic;
+    text-align:center;
+    font-size: 70px;
+    background-color: rgba(255, 255, 255, 0.514);
+}
+#img-caption {
+    margin-top: -50px;
+    text-align: center;
+    color: white;
+    margin-bottom: 100px;
+}
+li {
+  padding: 10px;
+  margin-left: -40px;
+}
+ul {
+    background-color: rgba(255, 255, 255, 0.274);
+    border-style:double;
+    margin: 0 30px;
+    list-style: none;
+    margin-left: 30 px;
+    font-style: italic;
+}
+#tribute-info {
+    background-color: antiquewhite;
+    text-align: center;
+    padding: 5px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+a {
+  font-size: 32px;
+  font-style:normal;
+  font-family: 'Times New Roman', Times, serif;
+}
+@media (max-width: 600px) {
+    html {
+      font-size: 20px;
+    }
+  
+    #title {
+      font-size: 40px;
+    }
+}
+#title:hover {
+    opacity: 0.7;
+    background-color: black;
+    animation: colorAnimation 2s infinite alternate;
+}
+
+@keyframes colorAnimation {
+  0% {
+    color: rgb(255, 255, 255);
+  }
+  50% {
+    color: rgb(0, 0, 0);
+  }
+  100% {
+    color: rgb(255, 255, 255);
+  }
+}
+li:hover {
+  background-color: rgb(255, 255, 255); /* Cambia el fondo a azul al pasar el ratón por encima */
+  animation: animationPiola 1.5s infinite alternate;
+}
+
+@keyframes animationPiola {
+  0% {
+    color: rgb(255, 255, 255);
+  }
+  50% {
+    color: rgb(0, 0, 0);
+  }
+  100% {
+    color: rgb(255, 255, 255);
+  }
+}

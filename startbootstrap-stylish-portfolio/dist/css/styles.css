@@ -598,8 +598,8 @@ progress {
 }
 
 .img-fluid {
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  height: 50vh;
 }
 
 .img-thumbnail {
@@ -11118,7 +11118,7 @@ html, body {
 body {
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 400%;
-    animation: gradient 3s ease infinite;
+    animation: gradient 6s ease-in-out infinite;
 }
 
 @keyframes gradient {
@@ -11133,14 +11133,12 @@ body {
     }
 }
 
-/* mis estilos */
-
 .bg-light2 {
   background-color: rgba(211, 211, 211, 0.5); /* Gris claro con 50% de opacidad */
 }
 
 .custom-bg {
-  background-image: url('/startbootstrap-stylish-portfolio/dist/assets/img/vigo.jpg');
+  background-image: url("../assets/img/vigo.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
